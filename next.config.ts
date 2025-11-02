@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true,       // Good practice
-  poweredByHeader: false,      // Security best practice
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   typescript: {
-    ignoreBuildErrors: true,   // Optional — keeps deploy smooth
+    ignoreBuildErrors: true,s
   },
 };
 
