@@ -31,4 +31,4 @@ export const getAuth = async () => {
     return authInstance;
 }
 
-export const auth = await getAuth();
+// Consumers should call getAuth() to avoid connecting during module import
